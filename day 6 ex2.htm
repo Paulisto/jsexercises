@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Credit Card Information</title>
+<script type="type/javascript" lang="javascript">
+
+function IsFormValid(){
+var IsFormValid = false;
+if (document.CardForm.YourName.value="" && document.CardForm.CardNo.value="")
+{
+	IsFormValid = true;	
+}
+if (IsFormValid==false) DisplayErrors();
+return IsFormValid;
+}
+
+function DisplayErrors(){
+if (document.CardForm.YourName.value="") alert("Please enter your name registered!");
+if (document.CardForm.CardNo.value="") alert("Please fill in your credit card number");
+}
+</script>
+</head>
+<body>
+<form action="http://www.credu.com"  method="POST" name="CardForm" onsubmit="return IsFormValid()">
+<table width="600">
+<tr><th colspan="3" align="center">Credit Card Information<br /><br /></th>
+</tr>
+<tr>
+	<td>Your Name:</td>
+	<td>&nbsp;</td>
+	<td><input type="text" name="YourName"></td>
+</tr>
+<tr>
+	<td>Card Number:</td>
+	<td>&nbsp;</td>
+	<td><input type="text" name="CardNo" size="12"></td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><br /><input type="submit" value="Complete"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

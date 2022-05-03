@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>Getting the Basics Right</title>
+<script>
+prompt("What is your name?","Enter your name here.")
+</script>
+</head>
+<body>
+<h1>Introduction to JavaScript</h1>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Precision of numbers</title>
+<script type="text/javascript" language="javascript">
+<!--
+function SetFocus(){
+document.Precision.FirstInput.focus();
+}
+function Calculate(){
+var num1 = parseInt(document.getElementById('FirstInput').value);
+var num2 = parseInt(document.getElementById('SecondInput').value); 
+if (isNaN(num1) || isNaN(num2){
+alert("You made an invalid entry. Please start again.");
+document.Precision.reset();
+SetFocus();
+}
+else{
+document.getElementById('result').value = num1 / num2;
+}
+}
+-->
+</script>
+</head>
+<body onload="SetFocus()">
+<h2>Precision of numbers</h2>
+<form name="Precision">
+<p>
+<strong>Enter first number:</strong>
+<input type="text" name="FirstInput" id="FirstInput" />
+</p>
+<p>
+<strong>Enter second number:</strong>
+<input type="text" name="SecondInput" id="SecondInput" />
+</p>
+<p>
+<strong>The answer is:</strong>
+<input type="text" name="result" id="result" />
+</p>
+<p>
+<button onclick="Calculate()" type="button">Click here to calculate</button>
+</p>
+</form>
+</body>
+</html>

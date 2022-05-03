@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Raising a number to the nth root .</title>
+<script type="text/javascript" lang="javascript">
+<!--
+function SetFocus(){ 
+document.SimpleForm.FirstInput.focus();
+}
+function FindPow(){
+var num1 = document.SimpleForm.FirstInput.value;
+var num2 = document.SimpleForm.SecondInput.value;
+if (isNaN(num1)) || (isNaN(num2)){
+alert("You made an invalid entry. Please start again.");
+document.SimpleForm.reset();
+SetFocus();
+}
+else {
+var result = Math.pow(num1, num2);
+var alertString = "You entered " + num1 + " as your base and " + num2 + " as your index.";
+alertString+ = " Your answer is " + result;
+alert(alertString);
+document.SimpleForm.reset;
+SetFocus();
+}
+}
+-->
+</script>
+</head>
+<body onload="SetFocus()">
+<form name="SimpleForm">
+<table>
+<tr>
+<td width="25%" align="right">Enter the base:</td>
+<td><input name="FirstInput" type="text"></td>
+</tr>
+<tr>
+<td width="25%" align="right">Enter the index:</td>
+<td><input name="SecondInput" type="text"></td>
+</tr>
+<tr>
+<td width="25%" align="right">&nbsp;</td>
+<td><button type="button" onclick="FindPow()">Click to calculate</button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

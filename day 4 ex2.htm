@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Properties of a Document Object</title>
+
+<style type="text/css">
+td 		{padding: 0.05cm 1cm}
+</style>
+
+<body>
+<h1>Properties of a Document Object</h1>
+
+<table>
+
+	<tr>
+		<th>Property</th><th>Data Type</th><th>Value</th>
+	</tr>
+	
+<script language="javascript" "type=text/javascript">
+<!--
+
+var obj = window.navigator;
+
+for (var prop in obj) {
+	document.write("<tr>");
+	document.write(" <td>" + prop + "</td>");
+	document.write("<td>" + typeof + obj[prop]+ "</td>");
+	document.write("<td>" + obj[prop] + "</td>");
+	document.write("</tr>");
+}
+
+//-->
+</script>
+</table>
+</body>
+
+</head>
+</html>

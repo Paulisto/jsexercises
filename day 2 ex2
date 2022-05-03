@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 2</title>
+<script language="javascript" type="text/javascript">
+<!--
+var firstVariable = 10;
+var secondVariable = 12;
+alert("10 > 12" firstVariable > secondVariable); //false
+alert (firstVariable < secondVariable); //true
+//-->
+</script>
+</head>
+<body>
+<h1>Exercise 2</h1>
+</body>
+</html>

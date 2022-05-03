@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>People and their Ages</title>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+var names = new Array();
+	names[0] = "Ssebakijje";
+	names[1] = "Mary";
+	names[2] = "John";
+	names[3] = "Jane";
+	names[4] = "Hope";
+	names[5] = "Luke";
+var ages = new Array(); 
+	ages[0] = "23";
+	ages[1] = "13";
+	ages[2] = "25";
+	ages[3] = "16";
+	ages[4] = "31";
+	ages[5] = "10";
+	
+
+var minorNames = new Array();
+var adultNames = new Array();
+var minorAges = new Array();
+var adultAges = new Array();
+for (var i=0; i<6; i++){
+	var tempName = names.pop();
+	var tempAge = ages.pop();
+	if (tempAge < 18) minorNames.push(tempName), minorAges.push(tempAge);
+	else adultNames.push(tempName), adultAges.push(tempAge);
+}
+
+var msg = "There are " + adultNames.length + " adults, ";
+	msg += "their names are " + adultNames.join(", ") + " with their ages " + adultAges.join(", ") + " respectively." + "<br />";
+	msg += "There are " + minorNames.length + " minors, ";
+	msg += "their names are " + minorNames.join(", ") + " with their ages " + minorAges.join(", ") + " respectively." ;
+//-->
+</script>
+</head>
+<body>
+
+<h1>People and their Ages</h1>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+document.write("<p>" + msg + "</p>");
+
+//-->
+</script>
+</body>
+</html>
